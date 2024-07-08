@@ -3,7 +3,7 @@ import TextArea from "./TextArea";
 
 function Terminal() {
   return (
-    <div className={"border border-black rounded-md mx-[150px] my-[100px]"}>
+    <div className={" rounded-md mx-[150px] my-[230px]"}>
       <Header />
       <TextArea />
     </div>

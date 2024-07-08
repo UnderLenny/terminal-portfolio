@@ -3,6 +3,8 @@ import UserInput from "./UserInput";
 import CommandOutput from "./CommandOutput";
 import About from "./commands/About";
 import Skills from "./commands/Skills";
+import Contact from "./commands/Contact";
+import Ls from "./commands/Ls";
 
 const TextArea = () => {
   const [output, setOutput] = useState([]);
@@ -11,19 +13,19 @@ const TextArea = () => {
     let result;
     switch (command.toLowerCase()) {
       case "ls":
-        result = "portfolio, bio, skills, contact, about";
+        result = <Ls />;
         break;
       case "skills":
         result = <Skills />;
         break;
       case "contact":
-        result = "leonid@example.com";
+        result = <Contact />;
         break;
       case "about":
         result = <About />;
         break;
       default:
-        result = "Команда не найдена";
+        result = "Command not found";
     }
 
     const newOutput = [...output, { command, result }];

@@ -8,7 +8,7 @@ const Header = () => {
       </div>
       <div className="flex-grow"></div>
       <h1 className="text-white font-bold text-[15px] tracking-widest text-center flex-grow">
-        LeonidGevorgyan/portfolio
+        leonidGevorgyan/portfolio
       </h1>
       <div className="flex-grow"></div>
     </div>
