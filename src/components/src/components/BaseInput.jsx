@@ -1,6 +1,6 @@
 const BaseInput = ({ children }) => {
   return (
-    <div className="mt-[30px] mb-2">
+    <div className="mt-6 mb-2">
       <div className="flex items-center">
         <div className="w-5 h-1 bg-blue-600"></div>
         <div className="flex gap-1 items-center bg-green-700 pl-2">
