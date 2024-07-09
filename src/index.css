@@ -24,3 +24,15 @@ footer,
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: 640px) {
+  :root {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 641px) {
+  :root {
+    padding: 2rem;
+  }
+}
