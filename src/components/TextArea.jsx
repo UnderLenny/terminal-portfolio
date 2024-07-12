@@ -3,7 +3,7 @@ import UserInput from "./UserInput";
 import CommandOutput from "./CommandOutput";
 import About from "./commands/About";
 import Skills from "./commands/Skills";
-import Contact from "./commands/Contact";
+import Contacts from "./commands/Contacts";
 import Ls from "./commands/Ls";
 
 const TextArea = () => {
@@ -19,8 +19,8 @@ const TextArea = () => {
       case "skills":
         result = <Skills />;
         break;
-      case "contact":
-        result = <Contact />;
+      case "contacts":
+        result = <Contacts />;
         break;
       case "about":
         result = <About />;
@@ -41,7 +41,10 @@ const TextArea = () => {
 
   return (
     <div className="max-w-4xl border-x-2 border-b-2 border-slate-800 rounded-b-md mx-auto text-gray-300 text-xl p-1 bg-black bg-opacity-75 box flex flex-col h-[30rem] sm:h-[30rem] md:h-[30rem]">
-      <div className="flex-1 overflow-y-auto p-5 scrollbar-hide" ref={ref}>
+      <div
+        className="flex-1 overflow-y-auto p-5 scrollbar-hide text-[12px] sm:text-[12px] lg:text-[20px] 2xl:text-[20px]"
+        ref={ref}
+      >
         <CommandOutput output={output} />
       </div>
       <UserInput onCommand={executeCommand} />
