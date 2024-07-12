@@ -4,7 +4,9 @@ const BaseInput = ({ children }) => {
       <div className="flex items-center">
         <div className="w-5 h-1 bg-blue-600"></div>
         <div className="flex gap-1 items-center bg-green-700 pl-2">
-          <h1>leonidGevorgyan</h1>
+          <h1 className="text-[15px] sm:text-[12px] lg:text-[20px] 2xl:text-[20px]">
+            leonidGevorgyan
+          </h1>
         </div>
         <div
           className="w-5 h-7 bg-green-700 z-20"
@@ -15,7 +17,9 @@ const BaseInput = ({ children }) => {
         <div className="flex items-center">
           <div className="bg-blue-400 -translate-x-5">
             <div className="flex gap-1 items-center justify-center pl-8 text-black pr-2">
-              <h1>/portfolio</h1>
+              <h1 className="text-[15px] sm:text-[12px] lg:text-[20px] 2xl:text-[20px]">
+                /portfolio
+              </h1>
             </div>
           </div>
           <div

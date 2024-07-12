@@ -6,8 +6,8 @@ const Header = () => {
         <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
         <div className="w-3 h-3 bg-green-500 rounded-full"></div>
       </div>
-      <h1 className="text-white font-bold text-[15px] tracking-widest text-center flex-grow">
-        leonidGevorgyan/portfolio
+      <h1 className="text-white font-bold tracking-widest text-center flex-grow text-[12px] sm:text-[12px] lg:text-[20px] 2xl:text-[20px]">
+        📁leonidGevorgyan/portfolio
       </h1>
     </div>
   );
