@@ -12,7 +12,7 @@ const About = () => {
         <img
           src={Image}
           alt="Avatar"
-          className="w-20 h-20 md:w-30 md:h-30 lg:w-40 lg:h-40 rounded-3xl p-3 "
+          className="w-30 h-30 md:w-35 md:h-35 lg:w-40 lg:h-40 rounded-3xl p-3 "
         />
         <div className={"block "}>
           <div className="text-lg text-white text-[12px] sm:text-[12px] lg:text-[20px] 2xl:text-[20px]">
