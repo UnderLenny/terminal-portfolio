@@ -9,13 +9,18 @@
   padding: 2rem;
   height: 100%;
   font-family: "Kode Mono", monospace;
+  box-sizing: border-box;
 }
 
 body {
   background-image: url("/background.jpg");
+  background-color: #0046a5;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
 }
 
 header,
@@ -23,16 +28,4 @@ footer,
 .container {
   margin: 0;
   padding: 0;
-}
-
-@media (max-width: 640px) {
-  :root {
-    padding: 1rem;
-  }
-}
-
-@media (min-width: 641px) {
-  :root {
-    padding: 2rem;
-  }
 }
