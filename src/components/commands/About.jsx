@@ -7,14 +7,14 @@ const About = () => {
   const age = differenceInYears(new Date(), dateOfBirth);
 
   return (
-    <div className={"px-8"}>
+    <div className="px-8">
       <div className="flex items-center pt-2">
         <img
           src={Image}
           alt="Avatar"
-          className="w-30 h-30 md:w-35 md:h-35 lg:w-40 lg:h-40 rounded-3xl p-3 "
+          className="w-30 h-30 md:w-35 md:h-35 lg:w-40 lg:h-40 rounded-3xl p-3"
         />
-        <div className={"block "}>
+        <div className="block">
           <div className="text-lg text-white text-[12px] sm:text-[12px] lg:text-[20px] 2xl:text-[20px]">
             Leonid Gevorgyan 🍀
           </div>
@@ -23,11 +23,7 @@ const About = () => {
           </h2>
         </div>
       </div>
-      <h1
-        className={
-          "pt-5 text-[12px] sm:text-[12px] lg:text-[20px] 2xl:text-[20px]"
-        }
-      >
+      <h1 className="pt-5 text-[12px] sm:text-[12px] lg:text-[20px] 2xl:text-[20px]">
         Hi! I'm a budding fullstack developer with skills in both frontend and
         backend development. I'm passionate about creating dynamic and
         user-friendly web applications and eager to grow in the field.
