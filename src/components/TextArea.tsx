@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import UserInput from "./UserInput";
 import CommandOutput from "./CommandOutput";
 import About from "./commands/About";
@@ -6,11 +6,17 @@ import Skills from "./commands/Skills";
 import Contacts from "./commands/Contacts";
 import Ls from "./commands/Ls";
 
-const TextArea = () => {
-  const [output, setOutput] = useState([]);
-  const ref = useRef(null);
+interface OutputEntry {
+  command: string;
+  result: React.ReactNode;
+  time: string;
+}
 
-  const executeCommand = (command) => {
+const TextArea : React.FC = () => {
+  const [output, setOutput] = useState<OutputEntry[]>([]);
+  const ref = useRef<HTMLDivElement>(null);
+
+  const executeCommand = (command: string) => {
     let result;
     switch (command.toLowerCase()) {
       case "ls":
@@ -29,7 +35,7 @@ const TextArea = () => {
         result = "Command not found";
     }
 
-    const newOutput = [
+    const newOutput  = [
       ...output,
       { command, result, time: new Date().toISOString() },
     ];

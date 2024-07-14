@@ -1,6 +1,15 @@
 import { format } from "date-fns";
+import React from "react";
 
-const CommandOutput = ({ output }) => {
+interface CommandOutputProps {
+  output: {
+    command: string;
+    time: string;
+    result: React.ReactNode;
+  }[];
+}
+
+const CommandOutput: React.FC<CommandOutputProps> = ({ output }) => {
   return (
     <div className="flex flex-col space-y-1">
       {output.map((item, index) => (
